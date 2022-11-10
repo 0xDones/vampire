@@ -5,17 +5,7 @@ Upload secrets/parameters from various sources to various destinations.
 ## Overview
 
 This tool is in very early stage, I'm planning to support more sources/destinations in the future. Use at your own risk.
-
-### Supported Sources
-
-- [x] .env files
-- [ ] k8s secrets (yaml manifest)
-- [ ] Yaml
-
-### Supported Destinations
-
-- [x] AWS SSM Parameter Store
-- [ ] AWS Secrets Manager
+Make sure to export your AWS profile before executing the tool.
 
 ## Getting Started
 
@@ -46,6 +36,8 @@ Options:
 #### .env to SSM
 
 ```bash
+export AWS_PROFILE=my-profile
+
 cat .env
 FOO=bar
 BAR=baz
@@ -73,3 +65,10 @@ y
 
 - [ ] Add tests
 - [ ] Build binary using Github Actions
+- [ ] Add more sources
+  - [x] .env files
+  - [ ] k8s secrets (yaml manifest)
+  - [ ] Yaml
+- [ ] Add more destinations
+  - [x] AWS SSM Parameter Store
+  - [ ] AWS Secrets Manager
