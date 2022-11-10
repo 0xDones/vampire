@@ -22,8 +22,8 @@ This tool is in very early stage, I'm planning to support more sources/destinati
 ### Installation
 
 ```bash
-git clone git@github.com:refl3ction/vampire-rs.git
-cd vampire-rs
+git clone git@github.com:refl3ction/vampire.git
+cd vampire
 make install # Requires rust toolchain to be installed for now
 ```
 
