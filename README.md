@@ -5,7 +5,6 @@ Upload secrets/parameters from various sources to various destinations.
 ## Overview
 
 This tool is in very early stage, I'm planning to support more sources/destinations in the future. Use at your own risk.
-Make sure to export your AWS profile before executing the tool.
 
 ### Supported Integrations
 
@@ -29,6 +28,10 @@ make install # Requires rust toolchain to be installed for now
 
 ### Usage
 
+Before running the tool, make sure to export your AWS profile.
+
+> `export AWS_PROFILE=my-profile`
+
 #### Basic
 
 ```bash
@@ -46,8 +49,6 @@ Options:
 #### .env to SSM
 
 ```bash
-export AWS_PROFILE=my-profile
-
 cat .env
 FOO=bar
 BAR=baz
